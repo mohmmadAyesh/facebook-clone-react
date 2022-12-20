@@ -1,0 +1,24 @@
+.searchContainer{
+    height:40px;
+    position: relative;
+}
+.searchContainer input{
+    width:75%;
+    height: 75%;
+    outline: none;
+    padding:7px 50px 9px;
+    border:none;
+    border-radius: 50px;
+    background: #F0F2F5;
+}
+.searchContainer input::placeholder{
+    color:#606770;
+    font-size: 15px;
+}
+.searchContainer .searchIcon{
+    position: absolute;
+    left:10px;
+    top:55%;
+    transform: translateY(-50%);
+    font-weight: 100;
+}

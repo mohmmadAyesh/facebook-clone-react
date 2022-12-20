@@ -1,0 +1,483 @@
+.post{
+    background: #fff;
+    width:100%;
+    box-shadow: 0 0 1px rgba(0,0,0,0.4);
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 15px;
+}
+.post .actual-post{
+    border-bottom: none;
+    border-radius: 10px;
+    width:100%;
+    height:100%;
+}
+.post .title-memory{
+    height:60px;
+    border: 1px solid #888;
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.actual-post .post-title{
+    width:100%;
+    height:64px;
+    padding:12px 16px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #888;
+    border-top: none;
+    border-bottom: none;
+}
+.actual-post .post-title img{
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin-right: 7px;
+}
+.actual-post .post-title .text-container .title{
+    font-size: 15px;
+    color:#050505;
+    font-weight: 600;
+}
+.post .share-comment-like span{
+    font-size: 15px;
+    color:#65676b;
+    font-weight: 600;
+}
+.actual-post .like-banner,
+.actual-post .like-comment-banner{
+    width:97%;
+    height:48px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+.like-banner svg,
+.actual-post .like-comment-banner i{
+    width:18px;
+    height:18px;
+    margin-right: 7px;
+}
+.post .title-container{
+    display: flex;
+    justify-content: space-between;
+}
+.post .title-left{
+    display: flex;
+}
+.post .text-container{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+}
+.post .text-container .date{
+    display: flex;
+    align-items: center;
+    transform: translateX(-3.5vw) translateY(2vh);
+}
+.post .text-container .name{
+    width:10%;
+    transform:translateX(-5vw);
+}
+.post .desc-container{
+    width:100%;
+    height:31px;
+    padding:4px 16px 16px;
+    display: flex;
+    justify-content: flex-start;
+}
+.post > .img-container{
+    width:100%;
+    height:720px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.post > .img-container img{
+    object-fit: cover;
+    width:500px;
+    height:888px;
+}
+.post .post-inform{
+    width:100%;
+    height:43px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    overflow: hidden;
+}
+.post .post-inform .img-container{
+    width:36px;
+    display: flex;
+    height:18px;
+    align-items: center;
+    margin-right: 25px;
+}
+.post .post-inform .img-container img{
+    width:18px;
+    height:18px;
+    object-fit: cover;
+}
+.post-inform > span{
+    font-size: 15px;
+    color:#65676b;
+    padding-left: 6px;
+}
+.post .post-inform .who{
+    margin-right: 240px;
+}
+.post .line{
+    background: #ccc;
+    height:1px;
+    width:95%;
+    margin: auto;
+}
+
+.post .like-comment-share{
+    width:100%;
+    height:52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.post .popUpdots{
+    background: #fff;
+    position: absolute;
+    width:344px;
+    height:177px;
+    top:5%;
+    right:5%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    opacity: 0;
+    pointer-events: none;
+}
+.post .popUpdots.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+.popUpdots .li{
+    width:328px;
+    margin: 0 8px;
+    padding:8px;
+    display: flex;
+}
+.popUpdots .li:not(:last-child){
+    border-bottom: 1px solid #ccc;
+}
+.popUpdots .li i,
+.popUpdots .li img{
+    margin-right: 10px;
+}
+.popUpdots .li img{
+    width:20px;
+    height:20px;
+}
+.popUpdots .li .text-container{
+    display: flex;
+    flex-direction: column;
+}
+.popUpdots .li .text-container .title{
+    font-size: 15px;
+    color:#050505;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.popUpdots .li .text-container .desc{
+    font-size: 12px;
+    color:#65676b;
+}
+.post .text-container{
+    height:60px;
+    padding:12px 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.post .title-container .title-left{
+    justify-content: flex-start;
+}
+.post .title-container img{
+    width:36px;
+    height:36px;
+    border-radius: 50%;
+}
+.title-left .text-container{
+    margin-left:10px;
+}
+.title-container .title-left{
+    display: flex;
+    width:400px;
+    font-size: 15px;
+    justify-content: space-between;
+}
+.title-left .text-container .inform{
+    font-style: 14px;
+    color:#606770;
+}
+.text-container .name .title{
+    margin-right: 5px;
+}
+.text-container .date{
+    display: flex;
+}
+.text-container .date .dateNumber{
+    font-style: 13px;
+    color:#606770;
+}
+.date svg{
+    width:15px;
+    height:15px;
+    margin-left: 10px;
+}
+.title-right{
+    width:36px;
+    height:36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.title-right:hover{
+    background: #eee;
+}
+.title-right div{
+    width:4px;
+    height:4px;
+    margin: 0 1px;
+    background: #606770;
+    border-radius:inherit;
+}
+.post .wrapper-post{
+    padding:0 15px;
+    width:100%;
+    height:893px;
+}
+.wrapper-post .actual-post{
+    /* border:1px solid #888; */
+    border-bottom: none;
+    border-radius: 10px;
+    width:100%;
+    height:100%;
+}
+.actual-post .title-memory{
+    height:60px;
+    border: 1px solid #888;
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.actual-post .post-title{
+    width:100%;
+    height:64px;
+    padding:12px 16px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #888;
+    border-top: none;
+    border-bottom: none;
+}
+.actual-post .post-title img{
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin-right: 7px;
+}
+.actual-post .post-title .text-container .title{
+    font-size: 15px;
+    color:#050505;
+    font-weight: 600;
+}
+.post-title .text-container .date .date-number{
+    font-size: 13px;
+    font-weight: 300;
+    color:#65676b;
+    padding-top: 2px;
+}
+.title-memory .year{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.title-memory .year .ago{
+    font-size: 15px;
+    color:#050505;
+    font-weight: 600;
+}
+
+.title-memory .year .memory .memorytitle{
+    font-size: 13px;
+    color:#050505;
+}
+.title-memory .year .memory i{
+    width:16px;
+    height:16px;
+    line-height: 16px;
+}
+.actual-post .post-content{
+    width:100%;
+    height:535px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    flex-direction: column;
+    border: 1px solid #888;
+     border-bottom-left-radius: 10px;
+    border-bottom-right-radius:10px ;
+    border-top: none;
+}
+.post-content .content{
+    width:620px;
+    height:130px;
+    padding:4px 16px 16px;
+    text-align:justify;
+    font-size: 15px;
+    color: #050505;
+    font-weight: 500;
+    line-height: 20px;
+}
+.post-content img{
+    width:100%;
+    height:397px;
+    /* border: 1px solid #888; */
+    border-top: none;
+}
+.actual-post .like-banner,
+.actual-post .like-comment-banner{
+    width:97%;
+    height:48px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+.like-banner svg,
+.actual-post .like-comment-banner i{
+    width:18px;
+    height:18px;
+    margin-right: 7px;
+}
+.like-banner span,
+.actual-post .like-comment-banner span,
+.actual-post .like-comment-banner i{
+    color:#65676b;
+}
+.actual-post .like-comment-banner{
+    justify-content: space-evenly;
+}
+.actual-post .like-comment-banner span{
+    font-size: 15px;
+}
+.actual-post .like-comment-banner .comment-container,
+.actual-post .like-comment-banner .like-container{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width:221px;
+    height:44px;
+    justify-content: center;
+}
+.actual-post .like-comment-banner .like-container.active span,
+.actual-post .like-comment-banner .like-container.active i,
+.actual-post .like-comment-banner .like-container.active:hover span{
+    color:#1876f2
+}
+
+.actual-post .like-comment-banner .comment-container:hover,
+.actual-post .like-comment-banner .like-container:hover{
+    background: #eee;
+}
+.actual-post .write-comment{
+    height:44px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    padding: 4px 16px;
+    padding-top:25px;
+}
+.write-comment .img-container{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    margin-right: 5px;
+    position: relative;
+}
+.write-comment .img-container img{
+    width:100%;
+    height: 100%;
+    border-radius: inherit;
+}
+.write-comment .img-container span{
+    width:8px;
+    height:8px;
+    border: 1px solid #fff;
+    background: #31a24c;
+    position: absolute;
+    border-radius: 50%;
+    top:75%;
+    left:70%;
+}
+.write-comment .inputField{
+    height:44px;
+    width:614px;
+    position: relative;
+}
+.write-comment .inputField input{
+    width:100%;
+    height:100%;
+    padding-left: 10px;
+    border-radius: 20px;
+    background: #eee;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+.write-comment .svgs-container{
+    width:140px;
+    height:36px;
+    position: absolute;
+    right:10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top:4px;
+}
+.actual-post .comments{
+    margin: 25px 10px;
+    display: flex;
+    align-items: center;
+}
+.actual-post .comments img{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+.actual-post .comments .text-container{
+    background: #DADDE1;
+    display: flex;
+    border-radius: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    height:50px;
+    padding:8px 12px;
+}
+.actual-post .comments .text-container .title{
+    font-size: 13px;
+    color:#050505;
+    margin-bottom: -25px;
+}
+.actual-post .comments .text-container .comments{
+    font-size: 15px;
+    color:#050505;
+}

@@ -1,0 +1,27 @@
+.nav{
+    height:6vh;
+    background: #fff;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width:100%;
+    padding:0 25px;
+    box-shadow: 3px 1px 2px rgba(0,0,0,0.2);
+    padding:0 20px;
+}
+.list{
+    width:645px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.messagerBar{
+    display: flex;
+    width:145px;
+    justify-content: space-between;
+    transform: translateX(-2vw);
+}
+
