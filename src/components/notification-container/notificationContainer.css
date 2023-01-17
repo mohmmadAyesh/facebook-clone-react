@@ -1,0 +1,105 @@
+.notification-container{
+    width:360px;
+    height:92vh;
+    position: fixed;
+    top:6vh;
+    background: #fff;
+    right:10px;
+    z-index: 100;
+    padding-top: 7px;
+    padding-left: 15px;
+}
+.notification-container.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+.notification-container .title-container{
+    width:100%;
+    height:40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+}
+.notification-container .title-container .title{
+    font-size: 24px;
+    color:#050505;
+    font-weight: 600;
+}
+.notification-container .title-container .three-dots{
+    background: #fff;
+    width:32px;
+    height:32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    cursor: pointer;
+}
+.notification-container .title-container .three-dots:hover{
+    background: #F2F3F5;
+}
+.notification-container .title-container .three-dots div{
+    width:4px;
+    height:4px;
+    background: #65676b;
+    border-radius: inherit;
+}
+.notification-container .title-container .three-dots div:not(:last-child){
+    margin-right: 2px;
+}
+.notification-container .tags-container{
+    width:100%;
+    height:36px;
+    display: flex;
+    align-items: center;
+}
+.tags-container span{
+    font-size: 15px;
+    color:#050505;
+    height:36px;
+    padding: 0 12px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 36px;
+    cursor: pointer;
+}
+.tags-container span.active{
+    background: #e7f3ff;
+    color:#1876f2;
+}
+.tags-container span:first-child{
+    border-radius: 100%;
+}
+.tags-container span:last-child{
+    border-radius: 30px;
+}
+.notification-container .second-title-container{
+    width:100%;
+    height:37px;
+    padding:20px 0px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right:8px;
+}
+.second-title-container .title{
+    font-size: 17px;
+    font-weight: 600;
+    color:#050505;
+}
+.second-title-container .seeAll{
+    color:#216fd8;
+    font-size: 15px;
+    cursor: pointer;
+    padding:10px;
+}
+.notification-container .notification-guys{
+    width:100%;
+    height:78vh;
+    padding-top: 10px;
+}
+.notification-container .notification-guys ul{
+    width: 100%;
+    height:100%;
+}

@@ -28,6 +28,12 @@ import basem from './assests/basem.jpg';
 import baker from './assests/baker.jpg';
 import ibrahim from './assests/ibrahimJomma.jpg';
 import yousef from './assests/yousef.jpg';
+import calendar from './assests/CalenderIcon.png';
+import friendIcon from './assests/friendsIcon.png';
+import NewFeed from './assests/NewFeed.png';
+import star from './assests/star.png';
+import gamming from './assests/gamming.png';
+export const notPicture={title:hazoom};
 export const svgs=[
     {
         id:1,
@@ -189,3 +195,76 @@ export const contactObject=[
         image:yousef
     },
 ];
+export const notificationInfo=[
+    {
+        title:'hazem Allam',
+        desc:'share his live',
+        img:hazoom,
+    }
+    ,{
+        title:'hazem Allam',
+        desc:'give me shard',
+        img:hazoom,
+    },
+    {
+        title:'hazem Allose',
+        desc:'hi again',
+        img:hazoom,
+    }
+]
+export const socialCards=[
+    {
+        title:"Events",
+        desc:'Organize or find events and other things to do online and nearby',
+        img:calendar
+    },
+    {
+        title:'Friends',
+        desc:'search for friends or people you may know',
+        img:friendIcon
+
+    },
+    {
+        title:'Groups',
+        desc:'Connect with people who share your interest',
+        img:groupsIcon
+    },
+    {
+        title:'new Feeds',
+        desc:'see relevant posts and pages you follow',
+        img:NewFeed
+    },
+    {
+        title:'Favourites',
+        desc:'View posts by your favourites',
+        img:star
+    },
+    {
+        title:'Most Recent',
+        desc:'see the most recent posts from your friends',
+        img:mostRecent
+    },
+    {
+        title:'Pages',
+        desc:'Discover and connect with business on facebook',
+        img:FlagIcon
+        
+    },
+]
+export const gammingCards=[
+    {
+    title:'Gaming video',
+    desc:'Watch and connect with your favourite games and streamers',
+    img:gamming
+    }
+];
+export const CreateInfo=[
+    "Post",
+    "Story",
+    "Room",
+    "Page",
+    "Ad",
+    "Groups",
+    "Events",
+    "Marketplace Listing",
+]

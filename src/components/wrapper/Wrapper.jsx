@@ -7,7 +7,13 @@ import profile from '../../assests/profile.jpg';
 import SearchInputField from '../searchInputField/SearchInputField';
 import Post from '../post/Post';
 import adImage from '../../assests/adImage.png';
+import HeaderPopUp from '../HeaderPopUp/HeaderPopUp';
+import { useContext, useEffect } from 'react';
+import { AppContext } from '../../ContextProvider';
+import  NotificationContainer from '../notification-container/notificationContainer';
+import CollectionContainer from '../collectionContainer/CollectionContainer';
 const Wrapper = () => {
+  const {isOpenedColl,setIsOpenedColl,isOpenedMess,setIsOpenedMess,isOpenedNot,setIsOpenedNot} =useContext(AppContext);
   return (
     <div className='wrapper'>
     <div className='icon-container'>
@@ -68,6 +74,9 @@ const Wrapper = () => {
         ))}
     </div>
     <div className='contacts'>
+    {isOpenedMess && (<HeaderPopUp/>)}
+    {isOpenedNot && (<NotificationContainer/>)}
+    {isOpenedColl && (<CollectionContainer/>)}
       <div className='sponsered'>
         <p className='title'>Sponsered</p>
         <div className='ad-area'>

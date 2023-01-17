@@ -1,0 +1,12 @@
+.MessangerContacts{
+    width:400px;
+    height:100vh;
+    background: #fff;
+    box-shadow: 10px;
+    padding:10px;
+    padding-left:-30px;
+    transform: translateY(6.5vh);
+}
+.MessangerContacts ul{
+    transform:translateX(-20px);
+}
